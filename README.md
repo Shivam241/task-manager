@@ -2,6 +2,9 @@
 
 This is a Task Manager application built with Next.js for an assignment requiring a feature-rich task management system. The app fulfills all specified requirements, including basic features, React challenges, and CSS challenges.
 
+## Deployment : 
+Try the app here https://task-manager-psi-azure.vercel.app/
+
 ## Features
 
 ### Basic Features
@@ -45,4 +48,5 @@ This is a Task Manager application built with Next.js for an assignment requirin
 - Drag-and-drop functionality is disabled in filtered views to maintain task order consistency
 
 ## Submission
-The code is committed to the `dev` and pulled into `main` of the GitHub repository: https://github.com/Shivam241/task-manager
+- The code is committed to the `dev` and pulled into `main` of the GitHub repository: https://github.com/Shivam241/task-manager
+- A vercel deployment also can be accessed here : https://task-manager-psi-azure.vercel.app/
