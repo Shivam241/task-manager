@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Manager App
 
-## Getting Started
+This is a Task Manager application built with Next.js for an assignment requiring a feature-rich task management system. The app fulfills all specified requirements, including basic features, React challenges, and CSS challenges.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Basic Features
+- Add tasks with a form
+- Mark tasks as completed
+- Delete tasks
+- Filter tasks by All, Completed, or Pending
+- Persist tasks using local storage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### React Challenges
+- Custom `useLocalStorage` hook for managing local storage
+- React Context API (`TaskContext`) to manage task data without prop drilling
+- Performance optimization with `React.memo`, `useCallback`, and `useMemo`
+- Form validation to prevent empty task submissions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### CSS Challenges
+- Dark and light mode toggle with theme persistence
+- CSS transitions for smooth task addition/removal
+- Mobile-first responsive design
+- Drag-and-drop task reordering using `react-beautiful-dnd`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shivam241/task-manager.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:3000 in your browser.
 
-## Learn More
+## Notes
+- Built with Next.js 15 and React 19
+- Uses TypeScript for type safety
+- Styles managed with CSS modules and global theming in `globals.css`
+- Drag-and-drop functionality is disabled in filtered views to maintain task order consistency
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Submission
+The code is committed to the `dev` and pulled into `main` of the GitHub repository: https://github.com/Shivam241/task-manager

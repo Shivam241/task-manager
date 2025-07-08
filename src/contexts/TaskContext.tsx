@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 interface TaskContextType {
   tasks: Task[];
-  setTasks: (tasks: Task[]) => void; // Add setTasks
+  setTasks: (tasks: Task[]) => void;
   addTask: (text: string) => void;
   toggleTask: (id: string) => void;
   deleteTask: (id: string) => void;
