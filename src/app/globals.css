@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -112,6 +112,15 @@
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
 
+[data-theme='dark'] {
+  --bg-color: #333;
+  --text-color: #fff;
+  --task-bg: #444;
+  --task-hover: #555;
+  --button-bg: #0056b3;
+  --button-text: #fff;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -119,4 +128,22 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
 }
